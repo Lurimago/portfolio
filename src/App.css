@@ -8,6 +8,7 @@ img{object-fit: contain;height: 200px;}
     color: white;
   margin-left: 80%;
   margin-top: -25%;
+    position: relative;
     }
 .divIconCart i{
         margin-top: 10px;

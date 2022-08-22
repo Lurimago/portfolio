@@ -1,28 +1,58 @@
-import React from 'react';
-import { Navbar, Container, Nav } from "react-bootstrap";
-import { Row, Card, Col, InputGroup, Form, Button, ListGroup } from "react-bootstrap";
-import 'boxicons'
+import React, { useState } from "react";
+import { Navbar, Container, Nav, Offcanvas } from "react-bootstrap";
+import "boxicons";
+import { useNavigate } from "react-router-dom";
+import "../styles/navbar.css";
 
 const NavBar = () => {
+  const navigate = useNavigate();
+  const token = localStorage.getItem("token");
+  const [displacementFilter, setDisplacementFilter] = useState();
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => {
+    if (token) {
+      setShow(true);
+    } else {
+      navigate("/login");
+    }
+  };
+
+  const logOut = () => {
+    localStorage.setItem("token", "");
+    navigate("/login");
+  };
+
+    const list = document.querySelectorAll('.list');
+    function activeLink(){
+        list.forEach((item)=>
+        item.classList.remove('active'));
+        this.classList.add('active');
+    }
+    list.forEach((item) => item.addEventListener('click',activeLink));
   return (
-    <Navbar bg="light" variant="danger" expand="lg">
-      <Container>
-        <Navbar.Brand href="#/" className="navBarTitle">Ecommerce App</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="navBarIcons">
-            <Nav.Link href="#login"><i class='bx bx-user' id="user-icon"></i></Nav.Link>
-            <Nav.Link href="#purchaces"><i class='bx bx-heart' id="heart-icon"></i></Nav.Link>
-            <Nav.Link href="#cart"><i class='bx bx-cart' id="cart-icon"></i></Nav.Link>
-            {/* <div class="navBarIcons-5">
-              <i class='bx bx-user' id="user-icon"></i>
-              <i class='bx bx-heart' id="heart-icon"></i>
-              <i class='bx bx-cart' id="cart-icon"></i>
-            </div> */}
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar >
+    <>
+      <Navbar  className="borderNavbar" variant="dark" expand="lg">
+        <Container >
+          <Navbar.Brand href="/#/" >
+          <span className="Luri">Luri</span>
+          <span className="mago">Mago</span>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto "></Nav>
+            <Nav>
+              <Nav.Link href="#deets"><span className="textNavbar">Home</span></Nav.Link>
+              <Nav.Link href="#deets"><span className="textNavbar">Acerca de mi</span></Nav.Link>
+              <Nav.Link href="#deets"><span className="textNavbar">Mis habilidades</span></Nav.Link>
+              <Nav.Link href="#deets"><span className="textNavbar">Mi portafolio</span></Nav.Link>
+              <Nav.Link href="#deets"><span className="textNavbar">Contacto</span></Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </>
   );
 };
 
