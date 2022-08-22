@@ -33,8 +33,18 @@
 		0 0 100px rgba(38,104,127,1),
 		0 0 140px rgba(38,104,127,1),
 		0 0 180px rgba(38,104,127,1);
-    
 }
+.name{
+	position: fixed; 
+	margin-top: 180px;
+}
+.mage{
+	position: absolute;
+	max-height: 250px;
+	margin-top: -40px;
+	z-index: 999;
+	position: fixed; 
+  }
 .textNavbar{
   color: #fff;
   font-size: 15px;
@@ -54,4 +64,14 @@
 		0 0 140px rgba(38,104,127,1),
 		0 0 180px rgba(38,104,127,1);
     font-size: 20px;
+}
+
+.prueba{
+	border-style: solid;
+	border-color: yellow;
+	width: 100%;
+	height: 800px;
+	object-fit: cover;
+	justify-content: center;
+	text-align: center;
 }

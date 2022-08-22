@@ -1,4 +1,3 @@
-import { Purchaces, Home, Login, ProductsDetail } from "./pages";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import { LoadingScreen, NavBar} from "./components";
 import "./styles/ring.css";
@@ -6,6 +5,8 @@ import "./index.css";
 import { useSelector } from "react-redux";
 import { Container } from "react-bootstrap";
 import Ring from './components/Ring';
+import AboutMe from './components/AboutMe';
+
 // import Footer from './components/Footer';
 
 function App() {
@@ -26,10 +27,9 @@ function App() {
           <Route path="/login" element={<Login />} /> */}
         </Routes>
       </Container>
+      <AboutMe/>
       {/* <Footer/> */}
-    
-
-        </HashRouter>
+            </HashRouter>
     </section>
   );
 }

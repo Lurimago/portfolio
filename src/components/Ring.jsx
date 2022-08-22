@@ -4,11 +4,10 @@ import "../styles/navbar.css";
 import image from "../img/sentado.jpg";
 import imgLinkedin from "../img/linkedin.png";
 import imgGithub from "../img/github.png";
-import imgGmail from "../img/gmail.jpg";
+import imgGmail from "../img/gmail.png";
 import imgFacebook from "../img/facebook.png";
 import imgWhatsapp from "../img/whatsapp.png";
-
-import imgSpotify from "../img/bi_spotify.png";
+import imgDownload from "../img/download.png";
 
 const Ring = () => {
   const [displacementFilter, setDisplacementFilter] = useState();
@@ -78,17 +77,20 @@ const Ring = () => {
     </div>
 
     </div>
+    <Container>
         <section class="rectangleContainer row">
 
-        <div class="rectangleInto col-12">
-           <img className="linkein col-2"src={imgLinkedin} />
-           <img className="github col-2"src={imgGithub} />
-           <img className="gmail col-2"src={imgGmail} />
-           <img className="facebook col-2"src={imgFacebook} />
-           <img className="whatsapp col-2"src={imgWhatsapp} />  
+        <div class="rectangleInto">
+           <img className="linkedin"src={imgLinkedin} />
+           <img className="github"src={imgGithub} />
+           <img className="download"src={imgDownload} />
+           <img className="gmail"src={imgGmail} />
+           <img className="facebook"src={imgFacebook} />
+           <img className="whatsapp"src={imgWhatsapp} />  
         </div>
         
         </section>
+        </Container>
         </>
   );
 };
