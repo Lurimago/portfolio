@@ -78,9 +78,9 @@ const Ring = () => {
 
     </div>
     <Container>
-        <section class="rectangleContainer row">
+        <section className="rectangleContainer row">
 
-        <div class="rectangleInto">
+        <div className="rectangleInto">
            <img className="linkedin"src={imgLinkedin} />
            <img className="github"src={imgGithub} />
            <img className="download"src={imgDownload} />
