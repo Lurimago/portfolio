@@ -7,12 +7,13 @@ import { Container } from "react-bootstrap";
 import Ring from './components/Ring';
 import AboutMe from './components/AboutMe';
 
+
 // import Footer from './components/Footer';
 
 function App() {
   const isLoading = useSelector((state) => state.isLoading);
   return (
-    <section class="wrapper">
+
     <HashRouter>
     <div id="stars"></div>
         <div id="stars2"></div>
@@ -27,10 +28,11 @@ function App() {
           <Route path="/login" element={<Login />} /> */}
         </Routes>
       </Container>
+      {/* <AboutMe/> */}
       <AboutMe/>
       {/* <Footer/> */}
             </HashRouter>
-    </section>
+
   );
 }
 

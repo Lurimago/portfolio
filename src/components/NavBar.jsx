@@ -9,7 +9,7 @@ const NavBar = () => {
     <>
       <Navbar className="borderNavbar" variant="dark" expand="lg">
         <Container>
-          <Navbar.Brand href="/#/">
+          <Navbar.Brand href="#">
           <div>
               <img className="mage" src={imgMage} />
             </div>
@@ -22,19 +22,19 @@ const NavBar = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto "></Nav>
             <Nav>
-              <Nav.Link href="#deets">
+              <Nav.Link href="#">
                 <span className="textNavbar">Home</span>
               </Nav.Link>
-              <Nav.Link href="#deets">
+              <Nav.Link href="#">
                 <span className="textNavbar">Acerca de mi</span>
               </Nav.Link>
-              <Nav.Link href="#deets">
+              <Nav.Link href="#">
                 <span className="textNavbar">Mis habilidades</span>
               </Nav.Link>
-              <Nav.Link href="#deets">
+              <Nav.Link href="#">
                 <span className="textNavbar">Mi portafolio</span>
               </Nav.Link>
-              <Nav.Link href="#deets">
+              <Nav.Link href="#">
                 <span className="textNavbar">Contacto</span>
               </Nav.Link>
             </Nav>
