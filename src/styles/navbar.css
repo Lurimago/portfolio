@@ -77,8 +77,6 @@
 		position: fixed; 
 		margin-top: -25px;
 		z-index: 999;
-		border-color: yellow;
-		border-style: solid;
 	}
 	.mage{
 		position: absolute;
