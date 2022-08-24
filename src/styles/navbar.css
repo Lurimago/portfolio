@@ -37,6 +37,7 @@
 .name{
 	position: fixed; 
 	margin-top: 180px;
+	z-index: 999;
 }
 .mage{
 	position: absolute;
