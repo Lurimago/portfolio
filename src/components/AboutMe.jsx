@@ -8,6 +8,7 @@ import imgSlide5 from "../img/imgslide5.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/slider.css";
+import { Container } from "react-bootstrap";
 
 const AboutMe = () => {
     const settings = {
@@ -52,9 +53,10 @@ const AboutMe = () => {
         ]
       };
   return (
+    <Container>
+    <p className="titleAboutMe">About me</p>
     <Slider {...settings}>
       <div className="cardX">
-      <h1>About me</h1>
         <div className="cardTop">
           <h2>Technology</h2>
           <img className="imgSlide1" src={imgSlide1} />
@@ -165,6 +167,7 @@ const AboutMe = () => {
         </div>
       </div>
     </Slider>
+    </Container>
   );
 };
 

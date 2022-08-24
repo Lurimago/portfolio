@@ -3,6 +3,21 @@
   border-style: none;
   border-color: transparent;
 }
+.Luri{
+  color: #fff;
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 40px;
+    text-shadow:
+		0 0 5px rgba(0,178,255,1),
+		0 0 10px rgba(0,178,255,1),
+		0 0 20px rgba(0,178,255,1),
+		0 0 40px rgba(38,104,127,1),
+		0 0 80px rgba(38,104,127,1),
+		0 0 90px rgba(38,104,127,1),
+		0 0 100px rgba(38,104,127,1),
+		0 0 140px rgba(38,104,127,1),
+		0 0 180px rgba(38,104,127,1);
+}
 .mago{
     color: #fff;
 	margin-top: 30%;
@@ -19,24 +34,9 @@
     font-family: 'Sedgwick Ave Display', cursive;
     font-size: 40px;
 }
-.Luri{
-  color: #fff;
-  font-family: 'Sedgwick Ave Display', cursive;
-  font-size: 40px;
-    text-shadow:
-		0 0 5px rgba(0,178,255,1),
-		0 0 10px rgba(0,178,255,1),
-		0 0 20px rgba(0,178,255,1),
-		0 0 40px rgba(38,104,127,1),
-		0 0 80px rgba(38,104,127,1),
-		0 0 90px rgba(38,104,127,1),
-		0 0 100px rgba(38,104,127,1),
-		0 0 140px rgba(38,104,127,1),
-		0 0 180px rgba(38,104,127,1);
-}
 .name{
 	position: fixed; 
-	margin-top: 180px;
+	margin-top: 200px;
 	z-index: 999;
 }
 .mage{
@@ -67,17 +67,42 @@
     font-size: 20px;
 }
 
-.prueba{
-	border-style: solid;
-	border-color: yellow;
-	width: 100%;
-	height: 200px;
-display: flex;
-}
-.prueba img{
-	border-style: solid;
-	border-color: yellow;
-	width: 350px;
-	height: 200px;
-	margin: auto;
-}
+/* / RESPONSIVE
+   ========================================================================= / */
+ 
+/* / Móviles en horizontal o tablets en vertical
+   ------------------------------------------------------------------------- / */
+   @media (max-width: 400px) {
+	.name{
+		position: fixed; 
+		margin-top: -25px;
+		z-index: 999;
+		border-color: yellow;
+		border-style: solid;
+	}
+	.mage{
+		position: absolute;
+		max-height: 200px;
+		margin-top: 25px;
+		z-index: 999;
+		position: fixed; 
+	  }
+
+	  .borderNavbar{
+		text-align: center;
+	  }
+   }
+   
+  /* / Tablets en horizonal y escritorios normales
+	 ------------------------------------------------------------------------- / */
+  @media (max-width: 720px) {
+	.borderNavbar{
+		text-align: center;
+	  }
+   }
+   
+  /* / Escritorios muy anchos
+	 ------------------------------------------------------------------------- */
+  @media (max-width: 1200px) {
+
+   }

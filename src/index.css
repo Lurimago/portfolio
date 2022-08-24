@@ -1,7 +1,8 @@
     body {
         height: 100vh;
-        overflow: auto;
-        background: radial-gradient(ellipse at bottom, #090a0f 0%,#2F198C 100%);
+        width: 100vw;
+        background: radial-gradient(ellipse at bottom, #090a0f 100%,#2F198C 0%);
+        /* background-repeat: inherit; */
        
     }
     
