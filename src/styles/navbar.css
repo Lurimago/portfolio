@@ -65,11 +65,13 @@
 		0 0 140px rgba(38,104,127,1),
 		0 0 180px rgba(38,104,127,1);
     font-size: 20px;
+	border-style: solid;
+	border-top:  #fff;
+	border-right:  #fff;
+	border-left:  #fff;
 }
-
 /* / RESPONSIVE
    ========================================================================= / */
- 
 /* / Móviles en horizontal o tablets en vertical
    ------------------------------------------------------------------------- / */
    @media (max-width: 400px) {
@@ -85,12 +87,10 @@
 		z-index: 999;
 		position: fixed; 
 	  }
-
 	  .borderNavbar{
 		text-align: center;
 	  }
    }
-   
   /* / Tablets en horizonal y escritorios normales
 	 ------------------------------------------------------------------------- / */
   @media (max-width: 720px) {
@@ -98,9 +98,7 @@
 		text-align: center;
 	  }
    }
-   
   /* / Escritorios muy anchos
 	 ------------------------------------------------------------------------- */
   @media (max-width: 1200px) {
-
    }
