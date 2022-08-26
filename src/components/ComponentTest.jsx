@@ -12,13 +12,7 @@ const ComponentTest = () => {
   return (
     <Container>
       <div className="contenido">
-      <img className="facebook" src={imgFacebook} />
-        <img className="linkedin" src={imgLinkedin} />
-        <img className="download" src={imgDownload} />
-        <img className="gmail" src={imgGmail} />
-        <img className="facebook" src={imgFacebook} />
-        <img className="whatsapp" src={imgWhatsapp} />
-        <img className="facebook" src={imgFacebook} />
+
       </div>
     </Container>
   );

@@ -3,11 +3,11 @@ import { Container } from "react-bootstrap";
 import "../styles/navbar.css";
 import image from "../img/sentado.jpg";
 import imgLinkedin from "../img/linkedin.png";
-import imgGithub from "../img/github.png";
 import imgGmail from "../img/gmail.png";
 import imgFacebook from "../img/facebook.png";
 import imgWhatsapp from "../img/whatsapp.png";
 import imgDownload from "../img/download.png";
+import imgGithub from "../img/github.png";
 
 const Ring = () => {
   const [displacementFilter, setDisplacementFilter] = useState();
@@ -78,13 +78,15 @@ const Ring = () => {
 
     </div>
     <Container>
+      <div className="rectangle">
         <div className="rectangleSocialNetworks">
            <img className="linkedin"src={imgLinkedin} />
-           <img className="github"src={imgGithub} />
            <img className="download"src={imgDownload} />
            <img className="gmail"src={imgGmail} />
            <img className="facebook"src={imgFacebook} />
+           <img className="github"src={imgGithub} />
            <img className="whatsapp"src={imgWhatsapp} />  
+        </div>
         </div>
         </Container>
         </>
