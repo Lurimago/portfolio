@@ -78,9 +78,7 @@ const Ring = () => {
 
     </div>
     <Container>
-        <section className="rectangleContainer row">
-
-        <div className="rectangleInto">
+        <div className="rectangleSocialNetworks">
            <img className="linkedin"src={imgLinkedin} />
            <img className="github"src={imgGithub} />
            <img className="download"src={imgDownload} />
@@ -88,8 +86,6 @@ const Ring = () => {
            <img className="facebook"src={imgFacebook} />
            <img className="whatsapp"src={imgWhatsapp} />  
         </div>
-        
-        </section>
         </Container>
         </>
   );

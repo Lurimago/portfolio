@@ -6,7 +6,9 @@ import { useSelector } from "react-redux";
 import { Container } from "react-bootstrap";
 import Ring from './components/Ring';
 import AboutMe from './components/AboutMe';
-import Skills_FrontEnd from "./components/Skills_FrontEnd";
+import Skills_FrontEnd from "./components/Skills_FrontEnd"; 
+import ComponentTest from "./components/ComponentTest"; 
+
 // import Footer from './components/Footer';
 
 function App() {
@@ -30,6 +32,7 @@ function App() {
       {/* <AboutMe/> */}
       <AboutMe/>
       <Skills_FrontEnd/>
+      <ComponentTest/>
       {/* <Footer/> */}
             </HashRouter>
 

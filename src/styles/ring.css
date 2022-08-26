@@ -73,27 +73,53 @@ from {
   background-color: black;
   object-fit: cover;
 }
-
-.rectangleContainer .rectangleInto {
-  background-color: #2F198C;
-  width: 90%;
-  height: 90px;
-  border-radius: 10px;
-  align-content: center;
+.rectangleSocialNetworks {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+  border-bottom: 4px solid #efefef;
+  border-radius: 5px;
 }
-.rectangleInto img {
-  cursor:pointer;
-  width: 70px;
-  height: 70px;
-  background-color: transparent;
-  border-radius: 6px;
+
+.rectangleSocialNetworks img {
   margin: auto;
-  box-shadow: 10px 10px 8px -8px #0ff;
+  width: 60px;
+  height: 60px;
+  filter: drop-shadow(0px 0px 15px white);
+  animation: flutuar 3s linear infinite;
+  border-radius: 10%;
+  background-color: White;
 }
+
+@keyframes flutuar {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-23px);
+  }
+}
+
+.contenido img:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.contenido img:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.contenido img:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.contenido img:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.contenido img:nth-child(6) {
+  animation-delay: 1s;
+}
+
+
+
 
 /* / RESPONSIVE
    ========================================================================= / */

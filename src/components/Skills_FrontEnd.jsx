@@ -19,7 +19,9 @@ const Skills_FrontEnd = () => {
             <div className="mask half">
               <div className="fill-1"></div>
             </div>
-            <img className="github"src={imgGithub} />
+            <div className="containerImg">
+            <img className="github" src={imgGithub} />
+            </div>
           </div>
         </div>
         <p className="skillsTitles">85%</p>
