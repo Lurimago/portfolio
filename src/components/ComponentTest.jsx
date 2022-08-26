@@ -18,6 +18,7 @@ const ComponentTest = () => {
         <img className="gmail" src={imgGmail} />
         <img className="facebook" src={imgFacebook} />
         <img className="whatsapp" src={imgWhatsapp} />
+        <img className="facebook" src={imgFacebook} />
       </div>
     </Container>
   );

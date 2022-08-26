@@ -42,3 +42,6 @@
 .contenido img:nth-child(6) {
   animation-delay: 1s;
 }
+.contenido img:nth-child(7) {
+    animation-delay: 1.2s;
+  }
