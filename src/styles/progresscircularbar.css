@@ -1,122 +1,105 @@
-.divContainer{
-display: flex;
+.divContainer {
+  display: flex;
 }
-.divSubContainer{
-margin: auto;
-}
-.circle-wrap {
+.divSubContainer {
   margin: auto;
-  width: 150px;
-  height: 150px;
-  background: white;   
-  border-radius: 50%;
 }
-.circle-wrap .circle .mask,
-.circle-wrap .circle .fill-1,
-.circle-wrap .circle .fill-2,
-.circle-wrap .circle .fill-3 {
+.divContainer .divSubContainer .percent {
+  position: relative;
   width: 150px;
   height: 150px;
+  display: inline-block;
+}
+.divContainer .divSubContainer .percent svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform: rotate(270deg);
+}
+.divContainer .divSubContainer .percent svg circle {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke-width: 3;
+  stroke: #000000;
+  transform: translate(5px, 5px);
+}
+.divContainer .divSubContainer .percent svg circle:nth-child(2) {
+  stroke: var(--clr);
+  stroke-dasharray: 440;
+  stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 2.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.dot {
   position: absolute;
-  border-radius: 50%;
+  inset: 5px;
+  z-index: 10;
+  transform: rotate(calc(3.6deg * var(--num)));
+  animation: animateDot 2s linear forwards;
 }
 
-.circle-wrap .circle .mask {
-  clip: rect(0px, 150px, 150px, 75px);
+@keyframes animateDot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(calc(3.6deg * var));
+  }
 }
-
-.circle-wrap .inside-circle {
-  width: 124px;
-  height: 124px;
+.dot::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background: #000000;
-  line-height: 120px;
+  background: var(--clr);
+  box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr);
+}
+.number {
+  position: absolute;
+  margin-top: 90%;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 2.5s;
+}
+.number h3,
+h4 {
+  color: #fff;
+  margin-left: 5%;
+  font-weight: bold;
   text-align: center;
-  margin-top: 13px;
-  margin-left: 13px;
-  color: white;
+  text-shadow: 0 0 5px rgba(0, 178, 255, 1), 0 0 10px rgba(0, 178, 255, 1),
+    0 0 20px rgba(0, 178, 255, 1), 0 0 40px rgba(38, 104, 127, 1),
+    0 0 80px rgba(38, 104, 127, 1), 0 0 90px rgba(38, 104, 127, 1),
+    0 0 100px rgba(38, 104, 127, 1), 0 0 140px rgba(38, 104, 127, 1),
+    0 0 180px rgba(38, 104, 127, 1);
+}
+
+.imgSkill {
   position: absolute;
-  z-index: 100;
-  font-weight: 700;
-  font-size: 2em;
+  width: 100px;
+  height: 100px;
+  margin: 10px 0px 0px 24px;
+  object-fit: cover;
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 2.5s;
 }
-
-/* ------------------------*/
-/* 1st Circle Progress bar */
-/* ------------------------*/
-.mask .fill-1 {
-  clip: rect(0px, 75px, 150px, 0px);
-  background-color: red;
-}
-
-.mask.full-1,
-.circle .fill-1 {
-  animation: fill-1 ease-in-out 3s;
-  transform: rotate(153deg);
-}
-
-@keyframes fill-1 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(153deg);
-  }
-}
-/* ------------------------*/
-/* 2nd Circle Progress bar */
-/* ------------------------*/
-.mask .fill-2 {
-  clip: rect(0px, 75px, 150px, 0px);
-  background-color: yellow;
-}
-
-.mask.full-2,
-.circle .fill-2 {
-  animation: fill-2 ease-in-out 3s;
-  transform: rotate(117deg);
-}
-
-@keyframes fill-2{
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(117deg);
-  }
-}
-
-/* ------------------------*/
-/* 3er Circle Progress bar */
-/* ------------------------*/
-.mask .fill-3 {
-  clip: rect(0px, 75px, 150px, 0px);
-  background-color: #23b9ea;
-}
-
-.mask.full-3,
-.circle .fill-3 {
-  animation: fill-3 ease-in-out 3s;
-  transform: rotate(135deg);
-}
-@keyframes fill-3{
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(135deg);
-  }
-}
-.containerImg{
-    display: flex;
-}
-.github{
-    position: absolute;
-    margin-left: 23px;
-    margin-top: 20px;
-    width: 105px;
-    height: 105px;
-    z-index: 99;
-    border-radius: 50%;
-    background-color:white ;
-  }
