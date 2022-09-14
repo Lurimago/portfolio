@@ -8,12 +8,14 @@ import imgFacebook from "../img/facebook.png";
 import imgWhatsapp from "../img/whatsapp.png";
 import imgDownload from "../img/download.png";
 import svgGithub from "../img/github.svg";
+import gifHole from "../img/gifHole.gif";
 
 const Ring = () => {
   const [displacementFilter, setDisplacementFilter] = useState();
   return (
     <Container>
       <div className="containgerRing">
+        <img className="gifHole" src={gifHole} />
         <img className="myphoto" src={image} />
         <div className="ring">
           <svg>
