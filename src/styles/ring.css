@@ -68,8 +68,8 @@ svg {
 }
 
 .myphoto {
-  height: 340px;
-  width: 340px;
+  height: 390px;
+  width: 390px;
   border-radius: 50%;
   background-color: black;
   object-fit: cover;
@@ -158,51 +158,9 @@ svg {
 /* / Móviles en horizontal o tablets en vertical
    ------------------------------------------------------------------------- / */
 @media (max-width: 500px) {
+  .hole,
   .ring {
-    border-radius: 50%;
-    box-shadow: 0 0 25px 0 #2f198c, 0 0 60px 0 #2f198c,
-      inset 0 0 25px 0 #2608089a, inset 0 0 40px 0 #2608089a;
-    -webkit-filter: url(#wave);
-    filter: url(#wave);
-    -webkit-animation: reverse-rotate 50s linear infinite;
-    animation: reverse-rotate 50s linear infinite;
-    height: 230px;
-    width: 230px;
-    margin: 0px auto;
-  }
-  @-webkit-keyframes reverse-rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(-720deg);
-    }
-  }
-  .hole {
-    border-style: solid;
-    border-color: #2f198c;
-    fill: #000000;
-    position: absolute;
-    color: #000000;
-    background-color: #000000;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    box-shadow: 0 0 40px 0 #2f198c, 0 0 90px 0 #2f198c;
-    -webkit-filter: url(#displacementFilter);
-    filter: url(#displacementFilter);
-    -webkit-animation: rotate 70s linear infinite;
-    animation: rotate 70s linear infinite;
-    margin: 0px auto;
-  }
-
-  @-webkit-keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+    display: none;
   }
 
   .containgerRing {
@@ -212,10 +170,14 @@ svg {
     min-height: 50vh;
     position: relative;
   }
+  .gifHole {
+    height: 300px;
+    width: 300px;
+  }
 
   .myphoto {
-    height: 215px;
-    width: 215px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
     background-color: black;
     object-fit: cover;
