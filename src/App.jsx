@@ -15,9 +15,6 @@ function App() {
   const isLoading = useSelector((state) => state.isLoading);
   return (
     <HashRouter>
-      {/* <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div> */}
       <NavBar />
       <Ring />
       {isLoading && <LoadingScreen />}

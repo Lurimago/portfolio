@@ -59,7 +59,7 @@
    ========================================================================= / */
 /* / Móviles en horizontal o tablets en vertical
    ------------------------------------------------------------------------- / */
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .name {
     position: fixed;
     margin-top: -25px;
@@ -68,7 +68,7 @@
   .mage {
     position: absolute;
     max-height: 200px;
-    margin-top: 25px;
+    margin-top: -40px;
     z-index: 999;
     position: fixed;
   }

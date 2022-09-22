@@ -54,11 +54,6 @@ svg {
     transform: rotate(360deg);
   }
 }
-.gifHole {
-  border-radius: 50%;
-  height: 0px;
-  width: 0px;
-}
 .containgerRing {
   display: flex;
   justify-content: center;
@@ -158,21 +153,64 @@ svg {
 /* / Móviles en horizontal o tablets en vertical
    ------------------------------------------------------------------------- / */
 @media (max-width: 500px) {
-  .hole,
   .ring {
-    display: none;
+    position: absolute;
+    margin-left: 500px;
+    height: 260px;
+    width: 260px;
+    border: 10px solid #333;
+    border-radius: 50%;
+    box-shadow: 0 0 25px 0 #2f198c, 0 0 60px 0 #2f198c,
+      inset 0 0 25px 0 #2608089a, inset 0 0 40px 0 #2608089a;
+    -webkit-filter: url(#wave);
+    filter: url(#wave);
+    -webkit-animation: reverse-rotate 50s linear infinite;
+    animation: reverse-rotate 50s linear infinite;
+    border-style: solid;
+    border-color: #2f198c;
+    margin: 0px auto;
+  }
+  @-webkit-keyframes reverse-rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-720deg);
+    }
+  }
+  .hole {
+    border-style: solid;
+    border-color: #2f198c;
+    fill: #000000;
+    position: absolute;
+    color: #000000;
+    background-color: #000000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px 0 #2f198c, 0 0 90px 0 #2f198c;
+    -webkit-filter: url(#displacementFilter);
+    filter: url(#displacementFilter);
+    -webkit-animation: rotate 70s linear infinite;
+    animation: rotate 70s linear infinite;
+    margin: 0px auto;
+    z-index: 99999;
   }
 
+  @-webkit-keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
   .containgerRing {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 50vh;
     position: relative;
-  }
-  .gifHole {
-    height: 300px;
-    width: 300px;
   }
 
   .myphoto {
