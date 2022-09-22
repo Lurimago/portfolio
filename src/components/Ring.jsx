@@ -17,7 +17,7 @@ const Ring = () => {
       <div className="containgerRing">
         <img className="gifHole" src={gifHole} />
         <img className="myphoto" src={image} />
-        <div className="ring">
+        {/* <div className="ring">
           <svg>
             <filter id="wave">
               <feTurbulence
@@ -76,7 +76,7 @@ const Ring = () => {
               style={{ filter: `url(#${displacementFilter})` }}
             />
           </svg>
-        </div>
+        </div> */}
       </div>
 
       <div className="rectangle">
