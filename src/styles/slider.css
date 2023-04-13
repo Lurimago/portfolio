@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+.cardX {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+.slick-slide > div {
+  margin: 0 2%;
+}
+.slick-list {
+  margin: 0 -2%;
+}
+.titleAboutMe{
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow:
+    0 0 5px rgba(0,178,255,1),
+    0 0 10px rgba(0,178,255,1),
+    0 0 20px rgba(0,178,255,1),
+    0 0 40px rgba(38,104,127,1),
+    0 0 80px rgba(38,104,127,1),
+    0 0 90px rgba(38,104,127,1),
+    0 0 100px rgba(38,104,127,1),
+    0 0 140px rgba(38,104,127,1),
+    0 0 180px rgba(38,104,127,1);
+  }
+.titleAboutMe:hover {
+    font-size: 30px;
+  }
+.cardX img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.cardX h2 {
+  text-align: center;
+  color: #ffffff;
+}
